@@ -7,20 +7,18 @@
   <body>
     <header>
       <nav class="navigation">
+        <a class="navigation-link" href="index.html">
+          <img class="logo" src="" alt="Логотип сайта городка Седона">
+        </a>
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">
-              <img class="logo" src="" alt="Логотип сайта городка Седона">
-            </a>
-          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -47,16 +45,16 @@
       </nav>
     </header>
     <main class="main-inner">
-      <header class="inner-heared">
+      <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
       </header>
       <section class="catalog-filter">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
@@ -128,17 +126,18 @@
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <a class="button button-border" href="#">
+        <button class="button button-border" type="submit">
           <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button" href="#">
+        </button>
+        <button class="button" type="submit">
           <span class="visually-hidden">Показать слайдшоу</span>
-        </a>
-        <a class="button" href="#">
+        </button>
+        <button class="button" type="submit">
           <span class="visually-hidden">Показать список</span>
-        </a>
+        </button>
       </section>
       <section class="catalog-hotel">
+        <h2 class="visually-hidden">Каталог отелей</h2>
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -199,7 +198,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
+            <a class="pagination-link pagination-next" href="#">...
               <span class="visually-hidden">Следующая страница</span>
             </a>
           </li>
@@ -222,7 +221,7 @@
         <h2 class="subscribe">Подпишитесь на рассылку</h2>
         <p class="subscribe">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="subscribe-email"></label>
+          <label class="visually-hidden" for="subscribe-email">Подписка</label>
           <input class="field" type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
           <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
