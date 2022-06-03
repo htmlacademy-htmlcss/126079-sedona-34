@@ -78,16 +78,16 @@ body {
 }
 
 .logo-container {
-  background: #000000 url("../images/index-background.jpg") no-repeat;
+  background-color: #82B3D3;
+  background-image: url("../images/index-background-divider.svg"),
+  url("../images/index-background.jpg");
+  background-repeat: no-repeat;
   background-size: 100% auto;
+  background-position: bottom, top;
 }
 
 .logo-welcome {
   margin-left: 371px;
-}
-
-.logo-divider-container {
-  background: url("../images/index-background-divider.svg") no-repeat bottom;
 }
 
 .slogan {
