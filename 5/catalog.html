@@ -25,12 +25,12 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link favorite" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
@@ -46,7 +46,7 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
+              <a class="breadcrumbs-link-index visually-hidden" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -124,13 +124,13 @@
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <button class="button button-border" type="button">
+        <button class="button button-cards" type="button">
           <span class="visually-hidden">Показать карточки</span>
         </button>
-        <button class="button" type="button">
+        <button class="button button-slideshow" type="button">
           <span class="visually-hidden">Показать слайдшоу</span>
         </button>
-        <button class="button" type="button">
+        <button class="button button-item" type="button">
           <span class="visually-hidden">Показать список</span>
         </button>
       </section>
@@ -145,8 +145,10 @@
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-price">От 4000 ₽</span>
             <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="hotel-card-button button-blue">В избранное</button>
-            <p class="hotel-card-grade">Рейтинг: 8,5</p>
+            <button class="hotel-card-button button-favorite">В избранное</button>
+            <div class="hotel-card-grade">
+              <p class="hotel-card-grade-text">Рейтинг: 8,5</p>
+            </div>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -156,8 +158,10 @@
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-price">От 5000 ₽</span>
             <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="hotel-card-button button-green">В избранном</button>
-            <p class="hotel-card-grade">Рейтинг: 9,2</p>
+            <button class="hotel-card-button button-searched">В избранном</button>
+            <div class="hotel-card-grade">
+              <p class="hotel-card-grade-text">Рейтинг: 9,2</p>
+            </div>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -167,8 +171,10 @@
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-price">От 2500 ₽</span>
             <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="hotel-card-button button-blue">В избранноe</button>
-            <p class="hotel-card-grade">Рейтинг: 6,9</p>
+            <button class="hotel-card-button button-favorite">В избранноe</button>
+            <div class="hotel-card-grade">
+              <p class="hotel-card-grade-text">Рейтинг: 6,9</p>
+            </div>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -178,8 +184,10 @@
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-price">От 1500 ₽</span>
             <a class="hotel-card-button button" href="#">Подробнее</a>
-            <button class="hotel-card-button button-blue">В избранноe</button>
-            <p class="hotel-card-grade">Рейтинг: 5,0</p>
+            <button class="hotel-card-button button-favorite">В избранноe</button>
+            <div class="hotel-card-grade">
+              <p class="hotel-card-grade-text">Рейтинг: 5,0</p>
+            </div>
           </li>
         </ul>
         <ul class="pagination">
@@ -227,17 +235,17 @@
     <footer class="footer-inner">
       <ul class="contacts-list">
         <li class="contacts-item">
-          <a class="contacts-link" href="https://vk.com/htmlacademy">
+          <a class="contacts-link vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Vkontakte</span>
           </a>
         </li>
         <li class="contacts-item">
-          <a class="contacts-link" href="https://t.me/htmlacademy">
+          <a class="contacts-link telegram" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
         <li class="contacts-item">
-          <a class="contacts-link" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="contacts-link youtube" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
@@ -246,7 +254,7 @@
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
       <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-        <img class="logo-htmlacademy" src="images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип Академии">
+        <img class="logo-htmlacademy" src="images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип Академии">
       </a>
     </footer>
   </body>
