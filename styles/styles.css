@@ -29,7 +29,16 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -41,9 +50,33 @@ body {
   visibility: hidden;
 }
 
-.header {
+.main-container {
+  flex-grow: 1;
+}
+
+.page-header {
   color: 000000;
   background-color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+  padding-left: 70px;
+}
+
+.navigation-list {
+  width: 450px;
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  list-style-type: none;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+  list-style-type: none;
 }
 
 .navigation-link {
@@ -87,7 +120,8 @@ body {
 }
 
 .logo-welcome {
-  margin-left: 371px;
+  display: block;
+  margin: 0 auto;
 }
 
 .slogan {
@@ -108,10 +142,21 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  list-style-type: none;
+}
+
+.advantages-item {
+  width: 400px;
 }
 
 .advantages-item-image {
+  display: flex;
+  width: 1200px;
   color: #ffffff;
   background-color: #82B3D3;
 }
@@ -202,7 +247,6 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756157;
@@ -211,13 +255,13 @@ body {
 .subscribe-index {
   background: #83B3D3 url("../images/subscribe-background.jpg") no-repeat;
   background-size: 100% auto;
+  text-align: center;
 }
 
 .subscribe-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -225,12 +269,21 @@ body {
 .subscribe-text {
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   color: #ffffff;
 }
 
 .subscribe-button {
   background-color: #82B3D3;
+}
+
+.page-footer, .footer-inner {
+  display: flex;
+  margin: 0 auto;
+}
+
+.contacts-list {
+  width: 116px;
+  list-style-type: none;
 }
 
 .vkontakte {
@@ -246,6 +299,7 @@ body {
 }
 
 .contacts-phone {
+  width: 720px;
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -255,10 +309,20 @@ body {
   text-decoration: none;
 }
 
+.htmlacademy-link{
+  width: 115px;
+  padding-right: 72px;
+}
+
 .main-inner-container {
   color: #ffffff;
   background: #83B3D3 url("../images/inner-heder-background.jpg") no-repeat;
   background-size: 100% auto;
+}
+
+.inner-header {
+  padding-left: 70px;
+  width: 495px;
 }
 
 .inner-header-title {
@@ -267,17 +331,41 @@ body {
   font-weight: 700;
 }
 
+.breadcrumbs {
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  list-style-type: none;
+}
+
 .breadcrumbs-item {
   font-size: 16px;
 }
 
 .breadcrumbs-link-index {
   background: url("../images/home.svg") no-repeat;
+  width: 12px;
+}
+
+.catalog-filter {
+  display: flex;
+  width: 1060px;
+  justify-content: space-between;
+  padding-left: 35px;
+}
+
+.catalog-filter-item {
+  list-style-type: none;
 }
 
 .catalog-filter-title {
   font-size: 20px;
   line-height: 26px;
+}
+
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-filter-button:first-of-type {
@@ -298,12 +386,30 @@ body {
   background-color: #82B3D3;
 }
 
+.hotel-sorting {
+  display: flex;
+  width: 1057px;
+  padding-left: 72px;
+  justify-content: space-between;
+}
+
 .hotel-sorting-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.hotel-card {
+  width: 340px;
+  padding: 20px;
 }
 
 .hotel-card-title {
@@ -345,6 +451,18 @@ body {
   background-color: #F2F2F2;
 }
 
+.pagination-amount-control {
+  display: flex;
+}
+
+.pagination {
+  display: flex;
+  width: 370px;
+  margin-right: 300px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
 .pagination-link {
   font-size: 20px;
   line-height: 36px;
@@ -361,8 +479,14 @@ body {
   background-color: #F2F2F2;
 }
 
+.amount-control {
+  display: flex;
+  width: 386px;
+}
+
 .subscribe-inner {
   background-color: #ffffff;
+  text-align: center;
 }
 
 .subscribe-inner .subscribe-title {
