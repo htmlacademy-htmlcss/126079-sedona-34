@@ -9,7 +9,7 @@
     <div class="body-container">
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo">
+        <a class="navigation-logo current">
           <img class="logo-full" src="images/logo-full.svg" width="139" height="70" alt="Welcome to the gorgeous Sedona 'becouse the grand canyon sucks!'">
         </a>
         <ul class="navigation-list">
@@ -61,7 +61,7 @@
             <li class="advantages-item advantages-item-image">
               <div class="advantages-image-container">
                 <h3 class="advantages-title advantages-title-image">Настоящий  городок</h3>
-                <p class="advantages-number">— №1 —</p>
+                <p class="advantages-number">&mdash; №1 &mdash;</p>
                 <p class="advantages-description advantages-description-image">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantages-image" src="images/town.jpg" width="800" height="384" alt="Улицы Седоны.">
@@ -88,28 +88,28 @@
               <img class="advantages-image" src="images/devil-bridge.jpg" width="800" height="384" alt="Мост дьявола в Седоне.">
               <div class="advantages-image-container">
                 <h3 class="advantages-title advantages-title-image">Там есть<br> мост дьявола</h3>
-                <p class="advantages-number">– №2 –</p>
+                <p class="advantages-number">&mdash; №2 &mdash;</p>
                 <p class="advantages-description advantages-description-image">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
             <li class="advantages-item">
               <div class="advantages-item-container">
                 <h3 class="advantages-title">Небольшая площадь</h3>
-                <p class="advantages-number">– №3 –</p>
+                <p class="advantages-number">&mdash; №3 &mdash;</p>
                 <p class="advantages-description">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
             <li class="advantages-item">
               <div class="advantages-item-container">
                 <h3 class="advantages-title">Красивая<br> дорога</h3>
-                <p class="advantages-number">– №4 –</p>
+                <p class="advantages-number">&mdash; №4 &mdash;</p>
                 <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages-item">
               <div class="advantages-item-container">
                 <h3 class="advantages-title">Мало<br> туристов</h3>
-                <p class="advantages-number">– №5 –</p>
+                <p class="advantages-number">&mdash; №5 &mdash;</p>
                 <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
@@ -117,7 +117,7 @@
         </section>
         <section class="hotel-search">
           <h2 class="hotel-search-title">Заинтересовались?</h2>
-          <p class="hotel-search-text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне  </p>
+          <p class="hotel-search-text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне &nbsp;&nbsp;</p>
           <a class="button basic-button hotel-search-button" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
       </main>
@@ -158,8 +158,8 @@
             </li>
             <li class="contacts-item">
               <a class="contacts-link" href="https://www.youtube.com/user/htmlacademyru">
-                <svg class="contacts-link-icons" width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8136 0.418176C18.6746 0.648666 19.3513 1.32532 19.5818 2.18637C19.9983 3.74547 20 7.00033 20 7.00033C20 7.00033 20 10.2552 19.5818 11.8143C19.3513 12.6753 18.6746 13.352 17.8136 13.5825C16.2545 14.0007 9.99996 14.0007 9.99996 14.0007C9.99996 14.0007 3.74547 14.0007 2.18636 13.5825C1.32532 13.352 0.648666 12.6753 0.418176 11.8143C0 10.2552 0 7.00033 0 7.00033C0 7.00033 0 3.74547 0.418176 2.18637C0.648666 1.32532 1.32532 0.648666 2.18636 0.418176C3.74547 0 9.99996 0 9.99996 0C9.99996 0 16.2545 0 17.8136 0.418176ZM13.194 7.00061L7.99808 10.0002V4.00092L13.194 7.00061Z"/>
+                <svg class="contacts-link-icons" width="23" height="18" viewBox="0 0 23 18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.9402 0.5H3.50738C1.64668 0.5 0.333252 2.09375 0.333252 3.9V13.9937C0.333252 15.9062 1.64668 17.5 3.50738 17.5H19.1591C20.8009 17.5 22.3333 15.9062 22.3333 14.1V3.9C22.1143 2.09375 20.8009 0.5 18.9402 0.5ZM7.99494 13.0375V4.9625L15.3283 9L7.99494 13.0375Z"/>
                 </svg>
                 <span class="visually-hidden">Youtube</span>
               </a>
@@ -187,9 +187,10 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container modal-container-close">
+    <!-- class="modal-container-close" для закрытия модального окна-->
+    <div class="modal-container">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
             <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
           </svg>
@@ -200,28 +201,74 @@
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group appointment-form-date">
               <label class="form-label" for="appointment-date-coming">Дата Заезда:</label>
-              <input class="field appointment-date" type="text" id="appointment-date-coming" name="appointment-date-coming" placeholder="27 апреля 2020">
+              <input class="field appointment-date" type="text" id="appointment-date-coming" name="appointment-date-coming" placeholder="27 апреля 2020" required>
+              <button class="calendar" type="button">
+                <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_39785_670)">
+                    <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z"/>
+                    <path d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z"/>
+                    <path d="M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z"/>
+                    <path d="M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z"/>
+                    <path d="M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z"/>
+                    <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z"/>
+                    <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z"/>
+                    <path d="M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z"/>
+                    <path d="M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z"/>
+                    <path d="M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z"/>
+                    <path d="M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_39785_670">
+                      <rect width="15" height="15"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="visually-hidden">Выбрать дату</span>
+              </button>
             </p>
             <p class="error">Мы не можем отправить вас в прошлое.</p>
             <p class="field-group appointment-form-date">
               <label class="form-label" for="appointment-date-leave">Дата Выезда:</label>
-              <input class="field appointment-date" type="text" id="appointment-date-leave" name="appointment-date-leave" placeholder="1 сентября 2021">
+              <input class="field appointment-date" type="text" id="appointment-date-leave" name="appointment-date-leave" placeholder="1 сентября 2021" required>
+              <button class="calendar" type="button">
+                <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_39785_670)">
+                    <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z"/>
+                    <path d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z"/>
+                    <path d="M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z"/>
+                    <path d="M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z"/>
+                    <path d="M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z"/>
+                    <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z"/>
+                    <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z"/>
+                    <path d="M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z"/>
+                    <path d="M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z"/>
+                    <path d="M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z"/>
+                    <path d="M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_39785_670">
+                      <rect width="15" height="15"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="visually-hidden">Выбрать дату</span>
+              </button>
             </p>
-            <p class="not-error">На эти даты есть свободные номера. Пока есть.</p>
+            <p class="success">На эти даты есть свободные номера. Пока есть.</p>
             <p class="field-group appointment-form-adults">
               <label class="form-label" for="appointment-adults">Взрослые:</label>
               <span class="appointment-people-container">
                 <button class="button-minus appointment-people-button" type="button">
                   <span class="visually-hidden">Минус</span>
-                  <svg width="13" height="1" viewBox="0 0 13 1" currentColor="" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+                  <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z"/>
                   </svg>
                 </button>
-                <input class="field appointment-people" type="number" id="appointment-adults" name="appointment-adults" placeholder="2">
+                <input class="field appointment-people" type="number" id="appointment-adults" name="appointment-adults" min="1" placeholder="2" required>
                 <button class="button-plus appointment-people-button" type="button">
                   <span class="visually-hidden">Плюс</span>
                   <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.3"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/></g>
+                    <g><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/></g>
                   </svg>
                 </button>
               </span>
@@ -230,19 +277,7 @@
               <span class="form-label-icon">
                 <label class="form-label" for="appointment-children">Дети:</label>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                    <svg width="1" height="9" viewBox="0 0 1 9" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_33716_651)">
-                        <path d="M0 9H1L1 3H0L0 9Z"/>
-                        <path d="M1 0H0V1H1V0Z"/>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_33716_651">
-                          <rect width="1" height="9"/>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </button>
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
               </span>
@@ -250,20 +285,20 @@
                 <button class="button-minus appointment-people-button" type="button">
                   <span class="visually-hidden">Минус</span>
                   <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+                    <path d="M0 0L0 1L13 1V0L0 0Z"/>
                   </svg>
                 </button>
-                <input class="field appointment-people" type="number" id="appointment-children" name="appointment-children" placeholder="1">
+                <input class="field appointment-people" type="number" id="appointment-children" name="appointment-children" min="0" placeholder="1">
                 <button class="button-plus appointment-people-button" type="button">
                   <span class="visually-hidden">Плюс</span>
                   <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.3"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/></g>
+                    <g><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/></g>
                   </svg>
                 </button>
               </span>
             </p>
           </section>
-        <a class="button additional-button modal-search-button" href="#">Найти</a>
+        <button class="button additional-button modal-search-button" type="submit">Найти</button>
       </div>
     </div>
     </body>
