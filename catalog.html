@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   </head>
   <body>
     <div class="body-container">
@@ -124,15 +125,15 @@
             <div class="fieldset-container">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <div clacc="range">
+                <div class="range">
                   <div class="range-wrapper">
                     <div class="range-wrapper-inputs">
                       <label class="catalog-filter-label" for="range-input-min">от</label>
-                      <input class="range-input" type="number" id="range-input-min" value="0" min="0" name="min-price">
+                      <input class="range-input" type="number" id="range-input-min" placeholder="0" min="0" name="min-price">
                     </div>
                     <div class="range-wrapper-inputs">
                       <label class="catalog-filter-label" for="range-input-max">до</label>
-                      <input class="range-input" type="number" id="range-input-max" value="9000" max="9000" name="max-price">
+                      <input class="range-input" type="number" id="range-input-max" placeholder="9000" max="9000" name="max-price">
                     </div>
                   </div>
                   <div class="range-scale">
@@ -211,7 +212,7 @@
               <span class="hotel-card-type">Гостиница</span>
               <span class="hotel-card-price">От 4000 ₽</span>
               <a class="button basic-button hotel-card-button" href="#">Подробнее</a>
-              <button class="button additional-button hotel-card-button" tupe="button">В избранноe</button>
+              <button class="button additional-button hotel-card-button" type="button">В избранноe</button>
               <span class="stars-4"></span>
               <p class="hotel-card-grade">Рейтинг: 8,5</p>
             </div>
@@ -239,7 +240,7 @@
               <span class="hotel-card-type">Гостиница</span>
               <span class="hotel-card-price">От 2500 ₽</span>
               <a class="button basic-button hotel-card-button" href="#">Подробнее</a>
-              <button class="button additional-button hotel-card-button" tupe="button">В избранноe</button>
+              <button class="button additional-button hotel-card-button" type="button">В избранноe</button>
               <span class="stars-3"></span>
               <p class="hotel-card-grade">Рейтинг: 6,9</p>
             </div>
@@ -253,7 +254,7 @@
               <span class="hotel-card-type">Гостиница</span>
               <span class="hotel-card-price">От 1500 ₽</span>
               <a class="button basic-button hotel-card-button" href="#">Подробнее</a>
-              <button class="button additional-button hotel-card-button" tupe="button">В избранноe</button>
+              <button class="button additional-button hotel-card-button" type="button">В избранноe</button>
               <span class="stars-2"></span>
               <p class="hotel-card-grade">Рейтинг: 5,0</p>
             </div>
@@ -307,6 +308,7 @@
         </form>
       </section>
       <section class="contacts">
+        <h2 class="contacts visually-hidden">Контакты</h2>
         <ul class="contacts-list">
           <li class="contacts-item">
             <a class="contacts-link" href="https://vk.com/htmlacademy">
