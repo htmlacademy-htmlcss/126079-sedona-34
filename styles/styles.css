@@ -556,7 +556,7 @@ img {
   border-radius: 10px 0 0 10px;
 }
 
-.field:focus:not(placeholder-shown) {
+.field:focus:not(:placeholder-shown) {
   background-color: #ffffff;
   outline: none;
   box-shadow: inset 0 0 0 2px #000000;
@@ -1039,20 +1039,14 @@ img {
   fill: #ffffff;
 }
 
+.breadcrumbs-link:not(.breadcrumbs-link-current):hover,
 .breadcrumbs-link-index:hover {
   fill: rgba(255, 255, 255, 0.6);
 }
 
+.breadcrumbs-link:not(.breadcrumbs-link-current):active,
 .breadcrumbs-link-index:active {
   fill: rgba(255, 255, 255, 0.3);
-}
-
-.breadcrumbs-link:not(.breadcrumbs-link-current):hover {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.breadcrumbs-link:not(.breadcrumbs-link-current):active {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-link-current {
