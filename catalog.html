@@ -8,6 +8,9 @@
   </head>
   <body>
     <div class="body-container">
+
+<!-- Шапка -->
+
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -47,6 +50,9 @@
         </ul>
       </nav>
     </header>
+
+<!-- Фильтр -->
+
     <main class="main-inner">
       <div class="main-inner-container">
         <header class="inner-header">
@@ -138,10 +144,10 @@
                   </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 227px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
@@ -156,12 +162,15 @@
           </form>
         </section>
       </div>
+
+<!-- Каталог -->
+
       <div class="content-container">
       <section class="hotel-sorting">
         <h2 class="hotel-sorting-title">Найдено гостиниц: 38</h2>
         <div class="select-sorting-type">
           <select class="select select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
+            <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
@@ -260,6 +269,9 @@
             </div>
           </li>
         </ul>
+
+<!-- Пагинация -->
+
         <div class="pagination-amount-control">
           <ul class="pagination">
             <li class="pagination-item pagination-current">
@@ -290,17 +302,20 @@
                 <option value="four">4</option>
                 <option value="eight">8</option>
                 <option value="sixteen">16</option>
-              </div>
+              </select>
             </div>
           </div>
-        </select>
+        </div>
       </section>
-      </div>
-    </main>
+    </div>
+  </main>
+
+<!-- Подвал -->
+
     <footer class="footer-inner">
       <section class="subscribe-inner">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-text">&nbsp;Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <p class="subscribe-text">&nbsp;Только полезная информация и никакого спама,<br>&nbsp;честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">Подписка</label>
           <input class="field" type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
@@ -343,7 +358,7 @@
           </li>
         </ul>
         <address class="contacts-phone">
-          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="contacts-phone contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
           <svg width="115" height="33" viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg">
@@ -363,5 +378,6 @@
         </a>
       </section>
     </footer>
+    </div>
   </body>
 </html>
