@@ -840,9 +840,12 @@ img {
   outline: none;
 }
 
-.appointment-people-button:hover,
-.appointment-people-button:active {
+.appointment-people-button:hover {
   fill: #000000;
+}
+
+.appointment-people-button:active {
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .button-minus {
@@ -1150,9 +1153,13 @@ img {
   cursor: pointer;
 }
 
-.control-mark:hover,
-.control-mark:active {
+.control-mark:hover {
   background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: none;
+}
+
+.control-mark:active {
+  background-color: rgba(255, 255, 255, 0.3);
   box-shadow: none;
 }
 
@@ -1167,7 +1174,7 @@ img {
 .control-input:disabled:hover + .control-mark,
 .control-input:disabled:focus + .control-mark {
   cursor: default;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.6);
   outline: none;
 }
 
@@ -1175,7 +1182,7 @@ img {
 .control-input:disabled:hover + .control-mark-radio,
 .control-input:disabled:focus + .control-mark-radio {
   cursor: default;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.6);
   outline: none;
 }
 
@@ -1313,14 +1320,20 @@ img {
   border: none;
 }
 
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 .range-toggle:active {
   border: 2px solid #83b3d3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   outline: none;
 }
 
 .range-toggle:focus {
   border: 3px solid #83b3d3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   outline: none;
 }
